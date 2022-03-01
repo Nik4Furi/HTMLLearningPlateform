@@ -1,0 +1,40 @@
+.htmlTagsContainer h1{ 
+    margin: 12px auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--font-1);
+    font-size: 4vw;
+}
+.htmlTags{
+    margin: 12px auto;
+    text-align: left;
+    /* color: salmon; */
+    
+}
+.htmlTags li{
+    font-size: 1.7vw;
+}
+.htmlTags li:hover{
+    color: rgba(40, 8, 51, 0.705);
+    cursor: pointer;
+}
+div.code-toolbar{
+    font-size: 2vw;
+}
+.htmlTagsCode{
+    margin: 23px 0;
+    background:rgb(197, 208, 218) ;
+    
+}
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 15px !important ;
+    font-weight: bold;
+    font-family: var(--font-2);
+}
+.copy-to-clipboard-button{
+    background: var(--main-bg-col) !important;
+}

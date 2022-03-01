@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:ital,wght@0,400;0,700;1,100&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+:root{
+    --main-bg-col: salmon;
+    --font-1: 'Potta One', cursive;
+    --font-2: 'Roboto', sans-serif;
+    --font-3: 'Ubuntu', sans-serif;
+
+}
+#logo{
+    position: absolute;
+    top: 24%;
+    left: 1%;
+    font-size: 2vw;
+   
+    font-weight: bold;
+    font-family: var(--font-3);
+}
+.respLogo{
+    display: none;
+}
+.h-primary{
+    font-size: 3.3vw;
+}
+.h-secondry{
+    font-size:2.5vw;
+}
+.h-ternary{
+    font-size: 1.9vw;
+}
+.burger{
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+}
+.line{
+    background: white;
+    width: 37px;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.w-1{
+    width: 80%;
+    margin: 12px auto;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+#progressBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 100%; */
+    width: 10px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(132, 167, 219, 0.966) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(210, 175, 224, 0.925) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(202, 158, 128, 0.925) 70.71%);
+    animation: progressBar 5s linear infinite   ;
+    z-index: 12;
+}
+@keyframes progressBar {
+    0%,100%{
+        filter: hue-rotate(10deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+@media only screen and (max-width:1225px) {
+    
+    .burger{
+        display: block;
+    }
+    .navbar{
+        height: 350px ;
+        text-align: center;
+        flex-direction: column;
+        transition: all 0.6s ease-in-out;
+           
+    }
+    .h-nav-resp{
+        height: 48px;
+    }
+    .respLogo{
+        display: block;
+    }
+    .logo{
+        width: 74px;
+     }
+    .navlist{
+        flex-direction: column;
+        
+    }
+    .nav-Right{
+        flex-direction: column;
+        position: relative;
+        right: -3%;
+
+    }
+    .sec-Left img{
+        width: 148%;
+        height: 95%;
+    }
+    .sec-Right p{
+        font-size: 1.34vw;
+    }
+    .headPara h3{
+       font-size: 1.5vw;
+    }
+    .headPara p{
+       font-size: 1.23vw;
+    }
+    .headPara a{
+       font-size: 1.23vw;
+    }
+    .nav-Right form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #search{
+        margin-bottom: 6px;
+    }
+    .v-class-resp{
+
+        display: none;
+    }
+    .services{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        max-width: 37%;
+    }
+}

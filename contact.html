@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeHTML-LearningPlateform:Contact</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <div id="progressBar"></div>
+
+    <nav class="navbar h-nav-resp">
+        <div id="logo" class="respLogo">
+            Free-LearningPlateform
+        </div>
+       
+        <ul class="navlist v-class-resp ">
+            <div class="logo">
+                <a href="/index.html"> <img src="/img/logo.png" alt="logo"></a>
+             </div>
+            <li><a href="/index.html" >Home</a></li>
+
+            <li><a href="/tags.html">HTMLTags</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-Right v-class-resp">
+            <form action="#">
+            <input type="search" name="search" id="search" placeholder="Search HTMLTags">
+           <a href="#"> <button class="btn" type="submit" >search</button></a>
+        </form>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="contact w-1">
+        <h1 class="h-primary">Fill Free to Contact Me!</h1>
+      
+            <form action="/talent.txt" method="post" id="formInput" >
+              <div class="form"> <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="myInput" placeholder="Enter Your Name" focused>
+            </div> 
+                <div class="form"> 
+                     <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="myInput" placeholder="Enter Your Email"> </div> 
+               <div class="form"> 
+                    <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" class="myInput" placeholder="Enter Your Phone"> </div> 
+               <div class="form"> 
+                    <label for="more">Your Concern:</label>
+                <textarea name="more" id="more" cols="30" rows="10 "  class="myInput" placeholder="Enter Your Concern"></textarea> </div> 
+                <div class="form">
+                    <button class="btn" type="#">Submit</button>
+                </div>
+            </form>
+        
+    </section>
+    <footer class="footer">
+        Copyright &copy; freeHTML--Learning Platform | All rights reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
